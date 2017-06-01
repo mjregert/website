@@ -1,7 +1,10 @@
 @charset "utf-8";
 body {
-	background-image: url(../img/pexels-photo-230659a.jpg);
-	background-size: cover;
+	background-color: black;
+	background-position: center;
+	background-image: url(../img/backgroundLarge.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: white;
 }
