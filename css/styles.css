@@ -1,4 +1,23 @@
 @charset "utf-8";
+
+/* Box Styling:  Apply a natural box layout model to all elements, but allowing components to change
+	- See https://css-tricks.com/international-box-sizing-awareness-day/
+    - And https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+
+
 body {
 	background-color: black;
 	background-position: bottom center;
@@ -20,7 +39,7 @@ body {
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     /* tablets and desktop */
 	body {
-		background-image: url(../images/background.jpg);
+		background-image: url(../images/background,portrait.jpg);
 		background-size: 100% auto;
 	}
 }
@@ -35,7 +54,7 @@ body {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */
 	body {
-		background-image: url(../images/background.jpg);
+		background-image: url(../images/background,portrait.jpg);
 		background-size: 100% auto;
 	}
 }
